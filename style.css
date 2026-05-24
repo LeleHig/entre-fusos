@@ -176,4 +176,20 @@ footer {
   background-color: #7a4f2d;
   color: #fff;
   border-color: #7a4f2d;
+}/* Listas */
+article ul {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+article ul li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+article h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #7a4f2d;
+  margin-top: 30px;
 }
