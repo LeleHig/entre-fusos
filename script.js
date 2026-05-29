@@ -31,4 +31,14 @@ filtros.forEach(function(botao) {
     });
 
   });
-});
+}); // Modo escuro
+function alternarModo() {
+  document.body.classList.toggle('escuro');
+  
+  const botao = document.getElementById('modo-escuro');
+  if (document.body.classList.contains('escuro')) {
+    botao.textContent = '☀️';
+  } else {
+    botao.textContent = '🌙';
+  }
+}

@@ -192,4 +192,46 @@ article h3 {
   font-size: 1.2rem;
   color: #7a4f2d;
   margin-top: 30px;
+}/* Modo escuro */
+#modo-escuro {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: 1px solid #c8a97e;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+body.escuro {
+  background-color: #1a1410;
+  color: #f5f0e8;
+}
+
+body.escuro .card {
+  background-color: #2a2018;
+  border-color: #4a3828;
+  color: #f5f0e8;
+}
+
+body.escuro header {
+  border-color: #4a3828;
+}
+
+body.escuro .filtro {
+  background-color: #2a2018;
+  border-color: #4a3828;
+  color: #f5f0e8;
+}
+
+body.escuro .filtro.ativo {
+  background-color: #c8a97e;
+  color: #1a1410;
+}
+
+body.escuro footer {
+  border-color: #4a3828;
 }
