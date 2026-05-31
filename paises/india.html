@@ -61,7 +61,11 @@
         </p>
 
         <figure>
-          <img src="../fotos/india/ganges.rio.jpg" alt="Rio Ganges, Índia" />
+          <img 
+  src="../fotos/india/ganges.rio.jpg" 
+  alt="Rio Ganges, Índia" 
+  onclick="abrirLightbox(this.src, this.alt)"
+/>
           <figcaption>O sagrado Rio Ganges — diferente de tudo que eu imaginava</figcaption>
         </figure>
 
@@ -112,6 +116,10 @@
     <footer>
       <p>Feito com ♥ e muito código</p>
     </footer>
-
-  </body>
+<script src="../script.js"></script>
+<div id="lightbox" class="lightbox" onclick="fecharLightbox()">
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-legenda" class="lightbox-legenda"></p>
+    </div>  
+</body>
 </html>

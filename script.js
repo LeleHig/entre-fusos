@@ -54,4 +54,17 @@ function buscarPais() {
       card.style.display = 'none';
     }
   });
+}// Lightbox
+function abrirLightbox(src, legenda) {
+  const lightbox = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  const leg = document.getElementById('lightbox-legenda');
+  
+  img.src = src;
+  leg.textContent = legenda;
+  lightbox.classList.add('ativo');
+}
+
+function fecharLightbox() {
+  document.getElementById('lightbox').classList.remove('ativo');
 }

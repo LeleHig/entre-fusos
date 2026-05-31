@@ -256,4 +256,46 @@ body.escuro #busca {
   background-color: #2a2018;
   border-color: #4a3828;
   color: #f5f0e8;
+}/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lightbox.ativo {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+.lightbox-legenda {
+  position: fixed;
+  bottom: 30px;
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+  font-style: italic;
+}
+
+figure img {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+figure img:hover {
+  opacity: 0.85;
 }

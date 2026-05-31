@@ -48,7 +48,11 @@
         </p>
 
         <figure>
-          <img src="../fotos/costa-rica/roca-bruja.jpg" alt="Roca Bruca, Costa Rica" />
+          <img 
+  src="../fotos/costa-rica/roca-bruja.jpg" 
+  alt="Roca Bruca, Costa Rica" 
+  onclick="abrirLightbox(this.src, this.alt)"
+/>
           <figcaption>Roca Bruca — selvagem e inesquecível</figcaption>
         </figure>
 
@@ -103,6 +107,13 @@
     <footer>
       <p>Feito com ♥ e muito código</p>
     </footer>
+<script src="../script.js"></script>
+  
+<div id="lightbox" class="lightbox" onclick="fecharLightbox()">
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-legenda" class="lightbox-legenda"></p>
+    </div>
 
-  </body>
+    <script src="../script.js"></script>
+</body>
 </html>

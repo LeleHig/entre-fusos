@@ -19,10 +19,14 @@
         <h2>Isehara</h2>
         <p class="data">Minha primeira cidade no Japão</p>
 
-        <figure>
-          <img src="../fotos/japao/oyama.jpg" alt="Montanha Oyama" />
-          <figcaption>Montanha Oyama vista de Isehara — minha primeira impressão do Japão</figcaption>
-        </figure>
+      <figure>
+  <img 
+    src="../fotos/japao/oyama.jpg" 
+    alt="Montanha Oyama" 
+    onclick="abrirLightbox(this.src, this.alt)"
+  />
+  <figcaption>Montanha Oyama vista de Isehara</figcaption>
+</figure>
 
         <p>
           Isehara foi onde tudo começou. Uma cidade silenciosa que me recebeu 
@@ -34,10 +38,14 @@
           ela parece te abraçar — e foi exatamente assim que me senti: acolhida.
         </p>
 
-        <figure>
-          <img src="../fotos/japao/mapa-isehara.jpg" alt="Mapa de Isehara" />
-          <figcaption>Isehara no mapa — uma cidade pequena com uma história grande</figcaption>
-        </figure>
+       <figure>
+  <img 
+    src="../fotos/japao/mapa-isehara.jpg" 
+    alt="Mapa de Isehara" 
+    onclick="abrirLightbox(this.src, this.alt)"
+  />
+  <figcaption>Isehara no mapa</figcaption>
+</figure>
 
         <p>
           Foi em Isehara que aprendi os costumes japoneses, o silêncio respeitoso, 
@@ -191,6 +199,10 @@
     <footer>
       <p>Feito com ♥ e muito código</p>
     </footer>
-
+<div id="lightbox" class="lightbox" onclick="fecharLightbox()">
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-legenda" class="lightbox-legenda"></p>
+    </div>
+    <script src="../script.js"></script>
   </body>
 </html>
