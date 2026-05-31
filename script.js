@@ -41,4 +41,17 @@ function alternarModo() {
   } else {
     botao.textContent = '🌙';
   }
+}// Barra de busca
+function buscarPais() {
+  const termo = document.getElementById('busca').value.toLowerCase();
+  const cards = document.querySelectorAll('.grade a');
+
+  cards.forEach(function(card) {
+    const nome = card.innerText.toLowerCase();
+    if (nome.includes(termo)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
 }
