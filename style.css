@@ -306,4 +306,13 @@ figure img {
 
 figure img:hover {
   opacity: 0.85;
+}/* Foto do sobre mim */
+.sobre-foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid #c8a97e;
 }
